@@ -42,3 +42,4 @@ Está basado en los wrappers de **Neil Kolban** [https://github.com/nkolban/esp3
 ---
 
 ## Licencia
+* MIT License
