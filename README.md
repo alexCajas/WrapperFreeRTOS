@@ -1,8 +1,8 @@
-<center>
+<p align="center">
 
 ## [click para versión en español](https://github.com/alexCajas/WrapperFreeRTOS/blob/main/SpanishReadme.md)
 
-</center>
+</p>
 
 
 [![Esp8266](https://img.shields.io/badge/soc-ESP8266-green)](https://www.espressif.com/en/products/socs/esp8266)
@@ -11,6 +11,7 @@
 ![C++](https://img.shields.io/badge/-C%2B%2B-red)
 [![FreeRTOS](https://img.shields.io/badge/-FreeRTOS-blue)](https://github.com/espressif/ESP8266_RTOS_SDK)
 [![RTOS](https://img.shields.io/badge/-RTOS-blue)](https://github.com/espressif/ESP8266_RTOS_SDK)
+[![RTOSArduCore](https://img.shields.io/badge/-esp8266RTOSArduCore-blue)](https://github.com/alexCajas/esp8266RTOSArduCore)
 [![Release](https://img.shields.io/github/v/release/alexCajas/WrapperFreeRTOS)](https://github.com/alexCajas/WrapperFreeRTOS/releases/latest)
 
 # WrapperFreeRTOS
