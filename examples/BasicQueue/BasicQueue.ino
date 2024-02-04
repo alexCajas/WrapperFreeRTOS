@@ -1,10 +1,10 @@
 /**
  * @file BasicQeueue.ino
  * @author Alex Cajas (https://github.com/alexCajas/WrapperFreeRTOS)
- * @brief En este ejemplo, se muestra como coordinar dos hilos,
- * y pasar mensajes, mediante un mutex.
- * TaskHello, recibe mensaje de TaskWorldQueue y lo imprime por pantalla.
- * TaskWorld, recibe mensaje de TaskHelloQueue", y lo imprime por pantalla.
+ * @brief In this example, it is demonstrated how to 
+ * coordinate two threads and exchange messages using a queue mutex. 
+ * TaskHello, TaskHello receives a message from TaskWorldQueue and prints it on the Serial terminal.
+ * TaskWorld receives a message from TaskHelloQueue and prints it on the Serial terminal.
  * @version 0.1
  * 
  */
@@ -24,7 +24,7 @@ void setup(){
     queueWorld = xQueueCreate( 1, sizeof(String));
 
     if(queueHello == NULL || queueWorld == NULL ){
-        Serial.println("fallo al crear los queue");
+        Serial.println("Failed to create the queue");
         ESP.restart();
     }
 
@@ -36,5 +36,5 @@ void setup(){
 }
 
 void loop(){
-    // tu codigo.
+    // your code
 }

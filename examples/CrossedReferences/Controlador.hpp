@@ -3,15 +3,14 @@
 
 #include "Task.h"
 /**
- * @brief Ejemplo para resolver el problema de la referencia 
- * Cruzada en c++.
+ * @brief  Example of a possible solution to crossed object references in C++.
  * 
  */
 
 class ThreadTask;
 
 /**
- * @brief Controlador tiene una referencia a ThreadTask.
+ * @brief Controlador Has a reference to ThreadTask.
  * 
  */
 class Controlador {
@@ -22,7 +21,7 @@ class Controlador {
         Controlador(String nombre);
         
         /**
-         * @brief pone en funcionamiento al hilo.
+         * @brief use run to to start the thread.
          * 
          */
         void start();
@@ -33,8 +32,8 @@ class Controlador {
 };
 
 /**
- * @brief ThreadTask curza su referencia con Controlador
- * al tenerlo como atributo.
+ * @brief ThreadTask crosses its 
+ * reference with Controller by having it as an attribute.
  * 
  */
 class ThreadTask : public Task{
@@ -43,8 +42,7 @@ class ThreadTask : public Task{
         Controlador *controlador;
 
         /**
-         * @brief Override de la función que hará 
-         * La tarea en bucle.
+         * @brief Override run function.
          * 
          * @param data 
          */

@@ -1,6 +1,6 @@
 #include "BasicTask.hpp"
 
-BasicTask::BasicTask(): Task("tarea",1024,TaskPrio_Low){
+BasicTask::BasicTask(): Task("task",1024,TaskPrio_Low){
 
 }
 

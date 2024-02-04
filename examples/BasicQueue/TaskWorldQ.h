@@ -4,7 +4,7 @@
  #include "Task.h"
 
 /**
- * @brief Manda y recibe un mensaje de TaskHelloQueue 
+ * @brief Send and receive a message from/to TaskHelloQueue 
  * 
  * 
  */

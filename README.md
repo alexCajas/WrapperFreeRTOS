@@ -1,38 +1,53 @@
+<center>
+
+## [click para versión en español](https://github.com/alexCajas/WrapperFreeRTOS/blob/main/SpanishReadme.md)
+
+</center>
+
+
+[![Esp8266](https://img.shields.io/badge/soc-ESP8266-green)](https://www.espressif.com/en/products/socs/esp8266)
+[![Esp32](https://img.shields.io/badge/soc-ESP32-orange)]()
+[![Arduino](https://img.shields.io/badge/platform-Arduino-green)](https://www.arduino.cc/)
+![C++](https://img.shields.io/badge/-C%2B%2B-red)
+[![FreeRTOS](https://img.shields.io/badge/-FreeRTOS-blue)](https://github.com/espressif/ESP8266_RTOS_SDK)
+[![RTOS](https://img.shields.io/badge/-RTOS-blue)](https://github.com/espressif/ESP8266_RTOS_SDK)
+[![Release](https://img.shields.io/github/v/release/alexCajas/WrapperFreeRTOS)](https://github.com/alexCajas/WrapperFreeRTOS/releases/latest)
+
 # WrapperFreeRTOS
 
-**FreeRTOS C++ Wrapper** para el fácil uso de las principales utilidades de concurrencia, de FreeRTOS, en **POO**, compatible con **Arduino core** y probado en un **ESP32**.
+**FreeRTOS C++ Wrapper** for easy use of the main concurrency utilities from FreeRTOS in **OOP**,compatible with **Arduino core** and tested on an  **ESP32** and **ESP8266**. Note that you must to use [esp8266RTOSArdoArduCore](https://github.com/alexCajas/esp8266RTOSArduCore) to use this library with **esp8266**.
 
-Está basado en los wrappers de **Neil Kolban** [https://github.com/nkolban/esp32-snippets/blob/master/cpp_utils/Task.cpp], y **Richard Damon** [https://github.com/richard-damon/FreeRTOScpp/blob/master/TaskCPP.h] .
-
----
-
-## Ejemplos:
-
-* **BasicTask:** Creación de un objecto concurrente.
-
-* **BasicMutex:** Coordinación entre dos objetos concurrentes mediante mutex o semáforo binario.     
-
-* **BasicSemaphore:** Típico problema un productor lento y varios consumidores rápidos, resuelto mediante un "counting semaphore".
-
-* **BasicQueue:** Envío de datos mediante QueueHandle_t entre dos objetos concurrentes.  
-
-* **CrossedReferences:** Ejemplo de una posible solución entre referencias cruzadas de objetos en C++.
+It is based on the wrappers by **Neil Kolban** [https://github.com/nkolban/esp32-snippets/blob/master/cpp_utils/Task.cpp], and **Richard Damon** [https://github.com/richard-damon/FreeRTOScpp/blob/master/TaskCPP.h] .
 
 ---
 
-## Adaptacion de wrappers
+## Examples:
 
-* La adaptación del wrapper Task.h y Task.cpp (nKolban), consitió en sustituir la libreria  std::string por Arduino.h, y redefinir toda variable y argumento tipo std::string u otros std:: por su conrrespondiente en Arduino.h, notar que se adapta según los parámetros pasados a las funciones de creación y manipulación de TaskHandle_t.
+* **BasicTask:** Creation of a concurrent object.
 
-* Se sustituye el valor de stack size de uint8 a uint32, puesto que xcreateTask() recibe un unit32. 
+* **BasicMutex:** Coordination between two concurrent objects using a mutex or binary semaphore.
 
-* Se añade un enum (TaskPriority) que recoge el valor númerico de las distintas prioridades predefinidas en la versión de FreeRTOS usada en tu proyecto (Richard Damon).
+* **BasicSemaphore:** Typical problem of a slow producer and several fast consumers, solved using a "counting semaphore."
 
-* Se añade el método xTaskHandle getTaskHandle(). 
+* **BasicQueue:** Data transmission using QueueHandle_t between two concurrent objects.  
+
+* **CrossedReferences:** Example of a possible solution to crossed object references in C++.
 
 ---
 
-## Bibliografía
+## Wrapper Adaptation
+
+* The adaptation of the Task.h and Task.cpp wrapper (nKolban) involved replacing the std::string library with Arduino.h and redefining any variable and argument of type std::string or other std:: with its corresponding in Arduino.h. Note that it adapts according to the parameters passed to the functions for creating and manipulating TaskHandle_t.
+
+* The stack size value is replaced from uint8 to uint32 since xcreateTask() receives a uint32.
+
+* An enum (TaskPriority) is added that collects the numeric value of the different predefined priorities in the version of FreeRTOS used in your project (Richard Damon).
+
+* The method xTaskHandle getTaskHandle() is added.
+
+---
+
+## Bibliography
 
 * [https://github.com/nkolban/esp32-snippets/blob/master/cpp_utils/Task.cpp]
 

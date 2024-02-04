@@ -1,8 +1,8 @@
 /**
  * @file BasicSemaphore.ino
  * @author Alex Cajas (https://github.com/alexCajas/)
- * @brief Ejemplo de coordinación entre consumidores rápidos
- * y productor lento. 
+ * @brief Example of coordination between fast consumers 
+ * and a slow producer.
  * @version 0.1
  * 
  */
@@ -20,7 +20,7 @@ void setup(){
     semaphore = xSemaphoreCreateCounting( 5, 0 ); 
 
     if(semaphore == NULL ){
-        Serial.println("fallo al crear el semaphore");
+        Serial.println("Faile to create the semaphore");
         ESP.restart();
     }
 
@@ -35,5 +35,5 @@ void setup(){
 }   
 
 void loop(){
-    // tu codigo.
+    // your code.
 }

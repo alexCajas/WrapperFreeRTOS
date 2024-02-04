@@ -4,7 +4,7 @@
  #include "Task.h"
 
 /**
- * @brief Imprimer la palabra "World" por pantalla
+ * @brief Prints the word "World", by Serial terminal
  * 
  */
 class TaskWorld : public Task{

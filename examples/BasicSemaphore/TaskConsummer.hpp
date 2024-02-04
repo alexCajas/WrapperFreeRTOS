@@ -4,8 +4,7 @@
 #include "Task.h"
 
 /**
- * @brief Ejemplo de coordinación entre consumidores rapidos
- * y productor lento.
+ * @brief Faster consummer.
  * 
  */
 class TaskConsummer : public Task{

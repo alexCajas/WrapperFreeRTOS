@@ -4,7 +4,7 @@
 #include "Task.h"
 
 /**
- * @brief Imprime la palabra "Hello", por pantalla.
+ * @brief Prints the word "Hello", by Serial terminal.
  * 
  */
 class TaskHello : public Task{

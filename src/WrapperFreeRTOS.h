@@ -1,7 +1,7 @@
 #ifndef WRAPPERFREERTOS_H
 #define WRAPPERFREERTOS_H
 /**
- * @brief Contiene las librerias ofrecidas por este proyecto.
+ * @brief It contains the libraries offered by this project.
  */
 
 #include "Task.h"

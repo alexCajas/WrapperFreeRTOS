@@ -3,20 +3,22 @@
 
 #include "Task.h"
 /**
- * @brief Objeto que hereda de Task, debe implementar el método
- * run, además notar que el constructor Task, recibe un "",
- * apesar de que está definido para recibir un const char* TaskName,
- * pasar una variable como const char * name = "nombre";
- * al constructor como por ejemplo:
+ * @brief cpp
+
+Object inheriting from Task must implement the run method. 
+Additionally, note that the Task constructor takes an empty string ("") 
+despite being defined to receive a const char* taskName. 
+Passing a variable like const char* name = "name" to the constructor, 
+as in the example:
  * SomeClass(const char* name):Task(name,...) 
- * da fallo de loadException. 
- * Uso correcto en el constructor de Task:
- * Task("nombre",...)
+results in a loadException error. 
+ * The correct usage in the Task constructor is:
+ * Task("name",...)
  */
 class BasicTask : public Task{
     public:
         BasicTask();
-        // override la función de la interfaz Task. 
+        // override run function of Task interface. 
         void run (void *data);
 };
 

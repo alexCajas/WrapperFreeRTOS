@@ -52,9 +52,8 @@ enum TaskPriority {
  *    }
  * };
  * 
- * Importante: apesar de que el constructor espera un 
- * const char * taskName, escribir lo siguiente falla:
- * 
+Important: Despite the constructor expecting a const char *taskName, 
+writing the following code fails:
   * class CurlTestTask : public Task {
   *   const char *name = "name";
   *   
@@ -64,7 +63,7 @@ enum TaskPriority {
  *    }
  * };
  * 
- * El uso correcto es:
+ * The correct usage is:
  * class CurlTestTask : public Task {
  *   CurlTestTask(): Task("name",...){}
  *    void run(void *data) {
@@ -73,7 +72,6 @@ enum TaskPriority {
  * };
  * @endcode
  *
- * implemented.
  */
 class Task {
 public:

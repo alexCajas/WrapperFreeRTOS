@@ -1,13 +1,13 @@
 /**
  * @file CrossedReferences.ino
  * @author Alex Cajas (https://github.com/alexCajas/)
- * @brief Ejemplo básico de como usar referencias cruzadas.
+ * @brief Basic example to use crossed references in c++.
  * @version 0.1
  */
 
 #include "Controlador.hpp"
 
-Controlador controlador("Controlador hogar");
+Controlador controlador("Home controller");
 
 void setup(){
     Serial.begin(115200);
@@ -15,5 +15,5 @@ void setup(){
 }
 
 void loop(){
-    //tu codigo.
+    //your code.
 }

@@ -1,11 +1,11 @@
 /**
  * @file BasicMutex.ino
  * @author Alex Cajas (https://github.com/alexCajas/WrapperFreeRTOS)
- * @brief En este ejemplo, se muestra como coordinar dos hilos,
- * mediante un mutex.
+ * @brief In this example, 
+ * it is shown how to coordinate two threads using a mutex.
  * 
- * TaskHello, imprime la palabra "Hello", por pantalla.
- * TaskWorld, imprime la palabra "World" por pantalla.
+ * TaskHello prints the word "Hello", by Serial terminal.
+ * TaskWorld, prints the word "World" by Serial terminal.
  * @version 0.1
  * 
  */
@@ -25,7 +25,7 @@ void setup(){
     mutexWorld = xSemaphoreCreateMutex();
 
     if(mutexHello == NULL || mutexWorld == NULL ){
-        Serial.println("fallo al crear los mutex");
+        Serial.println("Failed to create mutex");
         ESP.restart();
     }
 
@@ -40,5 +40,5 @@ void setup(){
 }
 
 void loop(){
-    // tu codigo.
+    // your code.
 }

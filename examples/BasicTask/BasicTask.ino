@@ -1,7 +1,7 @@
 /**
  * @file BasicTask.ino
  * @author Alex Cajas (https://github.com/alexCajas/)
- * @brief Ejemplo básico de creación de una clase Task.
+ * @brief Basic example of creating a basic Task class.
  * @version 0.1
  * 
  */
@@ -20,10 +20,10 @@ task.start();
 
 void loop(){
 
-    // Puedes parar la tarea con
+    // You can stop the Task
     // task.stop();
 
-    // o puedes suspender su actual ejecución con
+    // o or suspend the current execution
     // vTaskSuspend(task.getTaskHandle());
 }
 

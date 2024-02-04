@@ -4,8 +4,7 @@
 #include "Task.h"
 
 /**
- * @brief Manda y recibe un mensaje a TaskWorldQueue.
- * 
+ * @brief Send and receive a message from/to TaskWorldQueue. 
  */
 class TaskHelloQueue : public Task{
     private:
